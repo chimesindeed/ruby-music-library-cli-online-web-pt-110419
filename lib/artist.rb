@@ -4,6 +4,11 @@ class Artist
   @@all=[]
 
   
+  def self.create(artist)
+    artist = Artist.new(artist)
+    artist.save
+    artist
+  end
   def self.all
     @@all
   end
