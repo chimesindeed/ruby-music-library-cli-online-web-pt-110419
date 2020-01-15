@@ -34,6 +34,7 @@ class Genre
       song.genre= self
       @songs << song
     end
+    
   end
   
 end
