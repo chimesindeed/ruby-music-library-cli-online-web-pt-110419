@@ -9,6 +9,7 @@ class Song
   name.save
   name
   end
+  
   def self.all
     @@all
   end
@@ -22,8 +23,8 @@ class Song
     @artist = artist
     if artist
       self.artist=(artist)
+    end
   end
-end
 
   def save
     @@all << self
@@ -34,8 +35,5 @@ end
     artist.add_song(self)
     @artist
   end
-  
-  
-  
   
 end
